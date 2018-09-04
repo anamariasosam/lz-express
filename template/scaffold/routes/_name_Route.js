@@ -1,0 +1,11 @@
+const express = require('express')
+const route = express.Router()
+const <%= name %>Controller = require('../controllers/<%= name %>Controller')
+
+router.get('/<%= name %>', <%= name %>Controller.index)
+router.post('/<%= name %>', <%= name %>Controller.create)
+router.get('/<%= name %>/new', <%= name %>Controller.new)
+router.get('/<%= name %>/:id/edit', <%= name %>Controller.edit)
+router.get('/<%= name %>/:id', <%= name %>Controller.show)
+router.put('/<%= name %>/:id', <%= name %>Controller.update)
+router.delete('/<%= name %>/:id', <%= name %>Controller.destroy)
