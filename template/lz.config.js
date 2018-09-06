@@ -11,17 +11,15 @@ module.exports = {
     ],
     inserts: [
       {
+        path: 'routes/index.js',
         pattern: 'register:new:routes',
         echo: 'router.use(\'/\', <%= name %>Routes)'
       },
       {
+        path: 'routes/index.js',
         pattern: 'import:new:routes',
         echo: 'const <%= name %>Routes = require(\'./<%= name %>\')'
       },
     ]
   },
-  controller: {
-    template: 'scaffold/controllers',
-    prompt: this.scaffold.prompt
-  }
 }
