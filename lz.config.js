@@ -1,10 +1,12 @@
+const path = require('path')
+
 module.exports = {
   prompt: [
     {
-      type: 'confirm',
-      name: 'mongoose',
-      message: 'Add Mongoose?',
-      default: true
+      type: 'input',
+      name: 'moduleName',
+      message: 'What is the package name?',
+      default: path.basename(process.cwd())
     },
   ]
 }

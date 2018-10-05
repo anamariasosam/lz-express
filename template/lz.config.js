@@ -18,7 +18,7 @@ module.exports = {
       {
         path: 'routes/index.js',
         pattern: 'import:new:routes',
-        echo: 'const <%= name %>Routes = require(\'./<%= name %>\')'
+        echo: 'const <%= name %>Routes = require(\'./<%= name %>Route\')'
       },
     ]
   },
